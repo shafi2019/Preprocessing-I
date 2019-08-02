@@ -54,6 +54,215 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;		
+} 
+.container{
+	width: 900px;
+	margin: auto;
 }
+@background: lightgrey;
+@font: 3rem;
+@padding: 5%;
+@margin: 5%;
+@width: 400px;
+#display(){
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar{
+	width: 100%;
+	background: @background - 130;
+	padding-top: 3%;
+	margin-top: @margin - 4.5;
+    nav{
+		#display();
+		margin-left: @margin + 60;
+		padding-bottom: @padding - 4
+	}
+	a{
+		text-decoration: none;
+		color: white;
+	}
+	a:hover{
+		color: orange;
+	}
+
+}
+.main-container {
+	background-color: @background;
+	padding: @padding - 2;
+
+	img {
+		width: 30%;  
+		padding-top: @padding;
+		padding-bottom: @padding - 1;
+		border-radius: 100%;
+	}
+	h2{
+		font-size: @font;
+		padding-bottom: 2%;
+	}
+	h5{
+		font-size: @font - 1.6;
+	}
+	hr{
+		margin-top: @margin - 2;
+		margin-bottom: @margin - 2;
+	}
+	button{
+		padding: @padding - 3.5;
+		width: @width - 250;
+		margin-top: @margin - 2;
+		margin-bottom: @margin;
+		background-color: grey;
+		border-radius: 10px;
+		color: white;
+		font-size: @font - 2;
+		background: @background - 130;
+	}
+	   button:hover{
+		 background: @background - 200;
+		 color: orange;
+	   }
+	p{
+		font-size: @font - 1.9;
+	}
+	   
+}
+.second-container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: @padding - 2;
+	padding-bottom: @padding - 2;
+	.left{
+		width: 49%;
+		header{
+			font-weight: bold;
+			font-size: @font - 1;
+			margin-bottom: 2%;
+		}
+		p{
+			line-height: 1.5;
+			font-size: @font - 1.9;
+		}
+	}
+	.right{
+		width: 49%;
+		header{
+			font-weight: bold;
+			font-size: @font - 1.2;
+			margin-bottom: 2%;
+		}
+		p{
+			padding: @padding - 1;
+			border: 1px solid @background;
+			font-size: @font - 1.9; 
+		}
+	}
+}
+.last-container{
+	header{
+	  font-weight: bold;
+	  font-size: @font - 1.5;
+	  padding-bottom: @padding - 3.5;
+	  border-bottom: 1px solid @background;
+	}
+	p{
+		border-bottom: 1px solid @background; 
+		width: @width;
+		font-size: @font - 1.9;
+		padding: @padding - 4.5;
+	}
+	.job{
+        #display();
+	}
+	#div-title{
+		font-weight: bold;
+	}
+	#first{
+		background-color: @background;
+	}
+}
+.footer-class{
+	margin-bottom: @margin - 2;
+	background: @background - 130;
+	color: white;
+	header{
+		font-weight: bold;
+		margin-bottom: @margin - 3.5;
+		font-size: @font - 1.9;
+		display: flex;
+		justify-content: center;
+	}
+	p{
+		font-size: @font - 1.9;
+		padding: @padding - 4.5;
+		display: flex;
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 500px){
+	.container {
+		display: flex;
+		flex-flow: column;
+		width: 100%;
+	}
+	.navbar{
+		background-color: darkblue;
+		padding-top: 1%;
+	    nav{
+			display: flex;
+			flex-direction: column;
+		  }
+		  a{
+			  padding: @padding;
+			  border-bottom: 2px solid white;
+			  text-align: center;
+		  }
+		  a:hover{
+			  background-color: goldenrod;
+			  color: black;
+		  }
+		  a:first-child{
+			  border-top: 2px solid white;
+		  }
+	}
+	.main-container{
+		width: 100%;
+		h2{
+			font-size: @font - 0.5;
+		}
+		img{
+			margin-left: @margin + 30;
+			margin-bottom: @margin;
+		}
+	}
+	.second-container{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		.left{
+			width: 100%;
+			padding: @padding;
+		}
+		.right{
+			width: 100%;
+			padding: @padding;
+		}
+	}
+	.last-container{
+		width: 100%;
+		p{
+			padding-left: @padding - 2;
+		}
+	}
+	.footer-class{
+		background-color: darkblue;
+	}		
+}
+
+
+
+
 
