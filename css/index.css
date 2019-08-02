@@ -1,1 +1,328 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  width: 900px;
+  margin: auto;
+}
+.navbar {
+  width: 100%;
+  background: #515151;
+  padding-top: 3%;
+  margin-top: 0.5%;
+}
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 65%;
+  padding-bottom: 1%;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.navbar a:hover {
+  color: orange;
+}
+.main-container {
+  background-color: lightgrey;
+  padding: 3%;
+}
+.main-container img {
+  width: 30%;
+  padding-top: 5%;
+  padding-bottom: 4%;
+  border-radius: 100%;
+}
+.main-container h2 {
+  font-size: 3rem;
+  padding-bottom: 2%;
+}
+.main-container h5 {
+  font-size: 1.4rem;
+}
+.main-container hr {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.main-container button {
+  padding: 1.5%;
+  width: 150px;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  background-color: grey;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  background: #515151;
+}
+.main-container button:hover {
+  background: #0b0b0b;
+  color: orange;
+}
+.main-container p {
+  font-size: 1.1rem;
+}
+.second-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.second-container .left {
+  width: 49%;
+}
+.second-container .left header {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+.second-container .left p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+.second-container .right {
+  width: 49%;
+}
+.second-container .right header {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 2%;
+}
+.second-container .right p {
+  padding: 4%;
+  border: 1px solid lightgrey;
+  font-size: 1.1rem;
+}
+.last-container header {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 1.5%;
+  border-bottom: 1px solid lightgrey;
+}
+.last-container p {
+  border-bottom: 1px solid lightgrey;
+  width: 400px;
+  font-size: 1.1rem;
+  padding: 0.5%;
+}
+.last-container .job {
+  display: flex;
+  justify-content: space-between;
+}
+.last-container #div-title {
+  font-weight: bold;
+}
+.last-container #first {
+  background-color: lightgrey;
+}
+.footer-class {
+  margin-bottom: 3%;
+  background: #515151;
+  color: white;
+}
+.footer-class header {
+  font-weight: bold;
+  margin-bottom: 1.5%;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+}
+.footer-class p {
+  font-size: 1.1rem;
+  padding: 0.5%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+  .navbar {
+    background-color: darkblue;
+    padding-top: 1%;
+  }
+  .navbar nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar a {
+    padding: 5%;
+    border-bottom: 2px solid white;
+    text-align: center;
+  }
+  .navbar a:hover {
+    background-color: goldenrod;
+    color: black;
+  }
+  .navbar a:first-child {
+    border-top: 2px solid white;
+  }
+  .main-container {
+    width: 100%;
+  }
+  .main-container h2 {
+    font-size: 2.5rem;
+  }
+  .main-container img {
+    margin-left: 35%;
+    margin-bottom: 5%;
+  }
+  .second-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .second-container .left {
+    width: 100%;
+    padding: 5%;
+  }
+  .second-container .right {
+    width: 100%;
+    padding: 5%;
+  }
+  .last-container {
+    width: 100%;
+  }
+  .last-container p {
+    padding-left: 3%;
+  }
+  .footer-class {
+    background-color: darkblue;
+  }
+}
